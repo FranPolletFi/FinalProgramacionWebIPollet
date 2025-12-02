@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Final Web I</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <header class="header">
+        <div class="logo">Don Frán</div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="admin.html">Administrador</a>
+        </nav>
+    </header>
+
+    <main class="admin-wrapper">
+        <h1 class="admin-title">Administrador de Productos</h1>
+
+        <!-- TABLA DE PRODUCTOS -->
+        <section class="tabla-container">
+            <table id="tabla-productos">
+                <thead>
+                    <tr>
+                        <th class="titulosAdmin">Imagen</th>
+                        <th class="titulosAdmin">Nombre</th>
+                        <th class="titulosAdmin">Descripción</th>
+                        <th class="titulosAdmin">Precio</th>
+                        <th class="titulosAdmin">Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody-productos">
+                </tbody>
+            </table>
+        </section>
+
+        <!-- FORMULARIO DE ALTA -->
+        <section class="form-container admin-form">
+            <h2>Agregar nuevo producto</h2>
+
+            <form id="form-admin">
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" id="admin-nombre" required minlength="3" maxlength="60">
+                </div>
+
+                <div>
+                    <label>Descripción</label>
+                    <textarea id="admin-descripcion" required minlength="5" maxlength="200"></textarea>
+                </div>
+
+                <div>
+                    <label>Precio</label>
+                    <input type="number" id="admin-precio" required min="0" max="8000">
+                </div>
+
+                <div>
+                    <label>Imagen (URL)</label>
+                    <input type="url" id="admin-img">
+                </div>
+
+                <button type="submit" class="continuar-btn">Agregar producto</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>
