@@ -638,9 +638,9 @@ main h2 {
     display: block;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE MOBILE ================= */
 
-@media screen and (max-width: 430px) {
+@media screen and (width <= 430px) {
 
     /* HEADER */
     .header {
@@ -919,5 +919,322 @@ main h2 {
     .admin-form button {
         width: 100%;
         font-size: 16px;
+    }
+}
+
+
+/* ================= RESPONSIVE TABLET ================= */
+
+@media screen and (width > 430px) and (width <= 1024px) {
+
+    /* HEADER */
+    .header {
+        padding: 15px 30px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    /* HERO */
+    .hero {
+        height: 45rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .btn-hero {
+        padding: 12px 22px;
+        font-size: 16px;
+    }
+
+    /* TÍTULOS */
+    main h2 {
+        font-size: 2.5rem;
+        margin: 40px 0 20px;
+    }
+
+    /* BUSCADOR */
+    .buscador-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 20px;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 600px;
+        font-size: 17px;
+    }
+
+    .ordenar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .ordenar button {
+        font-size: 15px;
+        padding: 9px 12px;
+    }
+
+    /* MENU LAYOUT */
+    .menu-layout {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-width: 750px;
+        gap: 20px;
+    }
+
+    .helper {
+        display: none;
+    }
+
+    /* TARJETAS */
+    .item {
+        max-width: 100%;
+        padding: 18px;
+        max-height: none;
+    }
+
+    .item img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .item h3 {
+        font-size: 20px;
+        max-width: 220px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+
+    .precioInfo {
+        font-size: 19px;
+    }
+
+    .item button {
+        font-size: 15px;
+        width: 60%;
+    }
+
+    .itemContent {
+        gap: 15px;
+    }
+
+    .botonAgregar {
+        max-width: 220px;
+    }
+
+    /* PANEL PEDIDO */
+    #pedido-panel {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        position: static;
+        top: auto;
+    }
+
+    #pedido-panel h2 {
+        font-size: 28px;
+    }
+
+    #pedido-lista li {
+        font-size: 17px;
+        padding: 12px;
+    }
+
+    .controles button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .precio-total {
+        font-size: 16px;
+    }
+
+    .totales p {
+        font-size: 18px;
+    }
+
+    .totales .total {
+        font-size: 20px;
+    }
+
+    .continuar-btn {
+        width: 70%;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    /* FORMULARIO */
+    .form-container {
+        width: 500px;
+        margin: 80px auto;
+        padding: 25px;
+    }
+
+    .form-container label {
+        font-size: 17px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+        width: 350px;
+        font-size: 16px;
+    }
+
+    .form-container button {
+        font-size: 17px;
+        padding: 12px 22px;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 40px;
+        font-size: 15px;
+    }
+
+    .redes {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .redes a {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .redes img {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    /* BOTÓN FLOTANTE */
+    .flotante {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .flotante img {
+        width: 58px;
+        height: 58px;
+    }
+
+    /* ========== ADMIN SECTION ========== */
+
+    .admin-wrapper {
+        width: 95%;
+        padding: 60px 20px;
+    }
+
+    .admin-title {
+        font-size: 2.2rem;
+        margin-bottom: 35px;
+    }
+
+    /* TABLA */
+    .tabla-container {
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+
+    #tabla-productos {
+        font-size: 15px;
+        min-width: 100%;
+    }
+
+    #tabla-productos th {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    #tabla-productos td {
+        padding: 12px;
+    }
+
+    .img-tabla {
+        width: 75px;
+        height: 75px;
+    }
+
+    .titulosAdmin {
+        font-size: 20px;
+    }
+
+    .descripcionAdmin {
+        max-width: 250px;
+        font-size: 14px;
+    }
+
+    /* BOTONES ADMIN */
+    .btn-editar,
+    .btn-eliminar {
+        width: 48px;
+        height: 43px;
+        margin: 4px auto;
+        font-size: 18px;
+        display: block;
+    }
+
+    .btn-eliminar {
+        margin-top: 8px;
+    }
+
+    /* FORMULARIO ADMIN */
+    .admin-form {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .admin-form h2 {
+        font-size: 24px;
+        padding-top: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .admin-form label {
+        font-size: 17px;
+    }
+
+    .admin-form input,
+    .admin-form textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .admin-form button {
+        width: 100%;
+        font-size: 18px;
+        padding: 13px;
     }
 }
