@@ -105,7 +105,7 @@ function renderEmpanadas(arrayEmpanadas){
                                             </div>                                            
                                         </div>
                                         <div class="botonAgregar">
-                                            <button onclick="agregar('${emp.name}')">Agregar</button>
+                                            <button onclick="agregar('${emp.name}')" class="agr-btn">Agregar</button>
                                         </div>
                                     </div>`
 
@@ -265,4 +265,5 @@ function showFavorites() {
 function deleteFilters(){
     renderEmpanadas(empanadas);
 }
+
 
